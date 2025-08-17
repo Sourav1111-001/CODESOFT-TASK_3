@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scene">
+    <section class="rig">
+      <div class="calculator" id="calc">
+        <div class="bezel"></div>
+        <input id="display" class="display" type="text" inputmode="numeric" autocomplete="off" disabled />
+        <div class="grid">
+          <button class="key key--op key--lg" data-action="clear">C</button>
+          <button class="key key--op" data-val="÷">÷</button>
+          <button class="key key--op" data-val="×">×</button>
+          <button class="key key--op" data-val="-">−</button>
+
+          <button class="key" data-val="7">7</button>
+          <button class="key" data-val="8">8</button>
+          <button class="key" data-val="9">9</button>
+          <button class="key key--op" data-val="+">+</button>
+
+          <button class="key" data-val="4">4</button>
+          <button class="key" data-val="5">5</button>
+          <button class="key" data-val="6">6</button>
+          <button class="key key--eq" data-action="equals">=</button>
+
+          <button class="key" data-val="1">1</button>
+          <button class="key" data-val="2">2</button>
+          <button class="key" data-val="3">3</button>
+          <button class="key key--dot" data-val=".">.</button>
+
+          <button class="key key--xl" data-val="0">0</button>
+          <button class="key key--bk" data-action="back">⌫</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
